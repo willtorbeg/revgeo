@@ -320,7 +320,7 @@ revgeo <- function (longitude, latitude, provider = NULL, API = NULL,
         return(geocode_data)
       }
       else {
-        return(geocode_data[item])
+        return(paste0(geocode_data[item], ", ", geocode_data["state"]))
       }
     }
     else {
